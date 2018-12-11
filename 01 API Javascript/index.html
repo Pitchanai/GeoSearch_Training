@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    
+    <title>TOT Training</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <div class="search-address">
+      <span class="search-title">Search Address</span>
+      <input id="search-address" type="text" class="form-control">
+      <button onclick="searchAddress()" type="button" class="btn btn-primary search-button">Search</button>
+    </div>
+    <div class="search-address">
+      <span class="search-title">Location ID</span>
+      <input id="locationId" type="text" class="form-control">
+      <button onclick="locationDetail()" type="button" class="btn btn-success search-button">Get Details</button>
+    </div>
+    <div id="search-address-result" class="search-address-result">
+      
+    </div>
+  </body>
+  
+  <script>
+    const apiKey = "YOUR-ACCESS-TOKEN"
+    const autocompleteUrl = "https://geosearch.cdg.co.th/g/search/autocomplete"
+    const locationDetailUrl = "https://geosearch.cdg.co.th/g/search/details"
+
+    function searchAddress() {
+      $.post(autocompleteUrl,
+        {
+          keyword: $('#search-address').val(),
+          key: apiKey,
+          maxResult: 5
+        }, result => {
+          console.log(result)
+          var display = ""
+          for (let adr of result.data) {
+            display += `<p><b>${adr.FormattedAddress}</b><br>${adr.LocationID}</p>`
+          }
+          $('#search-address-result').html(display)
+        }, "json")
+    }
+    
+    function locationDetail() {
+      $.post(locationDetailUrl,
+        {
+          locationid: $('#locationId').val(),
+          key: apiKey
+        }, result => {
+          console.log(result)
+          var display = "<p>"
+          if (result.success) {
+            for (let key in result.data) {
+              if (result.data.hasOwnProperty(key)) {
+                display += `<b>${key} : </b>${result.data[key] == null ? "" : result.data[key]}<br>`
+              }
+            }
+            display += "</p>"
+            $('#search-address-result').html(display)
+          }
+          
+//          for (let adr of result.data) {
+//            display += `<p><b>${adr.FormattedAddress}</b><br>${adr.LocationID}</p>`
+//          }
+//          $('#search-address-result').html(display)
+        }, "json")
+    }
+    
+    
+  </script>
+  
+</html>

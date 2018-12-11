@@ -1,0 +1,21 @@
+.search-address {
+  padding: 10px;
+  width: 600px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-title {
+  width: 125px;
+}
+.search-button {
+  width: 110px;
+}
+.search-address-result {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+input {
+  width: 300px !important;
+}
