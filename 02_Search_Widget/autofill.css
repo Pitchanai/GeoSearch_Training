@@ -1,0 +1,59 @@
+html, body, #map {
+  height: 100%;
+  margin-left: 20px;
+  margin: 0;
+  padding: 0;
+}
+.all {
+  font-family: 'Pridi' !important;
+  font-weight: 200;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.name-group {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.name-group2 {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.itemList-item, .itemList, .searchResultsContainer {
+  z-index: 1001;
+}
+.wg-searchWidget input {
+  font-size: 15px;
+}
+.input input {
+  height: 30px;
+  width: 200px;
+  font-family: 'Pridi';
+}
+.address-fill-group {
+  margin-top: 140px;
+}
+.address-group {
+  position: absolute;
+  width: 450px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #d1f1ff;
+  overflow-y: inherit;
+}
+.address-result {
+  position: absolute;
+  top: 550px;
+}
+.address-input {
+  margin-top: 20px;
+}
+input {
+  padding-left: 10px;
+  font-size: 18px;
+}
+.active {
+  text-decoration: underline;
+}

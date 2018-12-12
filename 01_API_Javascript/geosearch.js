@@ -1,9 +1,9 @@
-const apiKey = "YOUR-ACCESS-TOKEN"
+const apiKey = "8e2c08edfe420b05209980ff3fbc0aaeea2ab9e89b68109126c66780d4db7b136dd07fd0ac2cd5fd"
 const autocompleteUrl = "https://geosearch.cdg.co.th/g/search/autocomplete"
 const locationDetailUrl = "https://geosearch.cdg.co.th/g/search/details"
 const batchUrl = "https://geosearch.cdg.co.th/g/search/batch"
 
-function searchAddress() {
+function autocomplete() {
   $.post(autocompleteUrl,
     {
       keyword: $('#search-address').val(),

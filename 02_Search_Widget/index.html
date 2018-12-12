@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Training</title>
+    
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt:300">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.25/esri/css/esri.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <script src="https://js.arcgis.com/3.25/"></script>
+    <script src="https://geosearch.cdg.co.th/g/sdk/1.0.3?key=YOUR-ACCESS-TOKEN"></script>
+  
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">GeoSearch</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../01_API_Javascript/index.html">Autocomplete & Location Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../01_API_Javascript/batch.html">Batch Search</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Search Widget on Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="autofill.html">Search Widget for Autofill</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <div class="wrapper">
+        <div class="c1" id="esrimap">
+            <div id="esrimap"></div>
+            <div id="search1"></div>
+        </div>
+    </div>
+  
+    <script src="map_and_widget.js"></script>
+  
+</body>

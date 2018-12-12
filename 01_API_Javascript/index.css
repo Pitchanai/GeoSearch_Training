@@ -1,18 +1,13 @@
-.search-container {
-  padding: 15px;
-  padding-top: 25px;
-}
-
 .search-address {
   padding: 10px;
-  width: 800px;
+  width: 600px;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .search-title {
-  width: 100px;
+  width: 125px;
 }
 .search-button {
   width: 110px;
@@ -22,5 +17,8 @@
   padding-left: 20px;
 }
 input {
-  width: 500px !important;
+  width: 300px !important;
+}
+.active {
+  text-decoration: underline;
 }
