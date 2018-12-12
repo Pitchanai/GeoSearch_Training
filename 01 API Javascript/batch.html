@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="geosearch.js"></script>
     
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="batch.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
@@ -23,29 +23,53 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Autocomplete & Location Details</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="batch.html">Batch Search</a>
           </li>
         </ul>
       </div>
     </nav>
     
-    <div class="search-address">
-      <span class="search-title">Search Address</span>
-      <input id="search-address" type="text" class="form-control">
-      <button onclick="searchAddress()" type="button" class="btn btn-primary search-button">Search</button>
-    </div>
     
-    <div class="search-address">
-      <span class="search-title">Location ID</span>
-      <input id="locationId" type="text" class="form-control">
-      <button onclick="locationDetail()" type="button" class="btn btn-success search-button">Get Details</button>
+    <div class="search-container">
+      
+      <div class="search-address">
+        <span class="search-title">Address 1</span>
+        <input id="address1" type="text" class="form-control">
+        <button onclick="batchAddress()" type="button" class="btn btn-primary search-button">Search</button>
+      </div>
+
+      <div class="search-address">
+        <span class="search-title">Address 2</span>
+        <input id="address2" type="text" class="form-control">
+        <div class="search-button"></div>
+      </div>
+      
+      <div class="search-address">
+        <span class="search-title">Address 3</span>
+        <input id="address3" type="text" class="form-control">
+        <div class="search-button"></div>
+      </div>
+      
+      <div class="search-address">
+        <span class="search-title">Address 4</span>
+        <input id="address4" type="text" class="form-control">
+        <div class="search-button"></div>
+      </div>
+      
+      <div class="search-address">
+        <span class="search-title">Address 5</span>
+        <input id="address5" type="text" class="form-control">
+        <div class="search-button"></div>
+      </div>
+      
     </div>
     
     <div id="search-address-result" class="search-address-result">
+      
     </div>
     
   </body>
