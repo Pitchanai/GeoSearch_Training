@@ -14,3 +14,7 @@ You have to change `YOUR-ACCESS-TOKEN` to your access token in all html file.
 ```
 <script src="https://geosearch.cdg.co.th/g/sdk/1.0.3?key=YOUR-ACCESS-TOKEN"></script>
 ```  
+
+## Try GeoSearch Application
+[App Store](https://itunes.apple.com/tt/app/geosearch-thailand/id1434516689) or 
+[Play Store](https://play.google.com/store/apps/details?id=com.gisid.geosearch)
