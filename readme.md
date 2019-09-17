@@ -12,7 +12,7 @@ Make sure you set website referrer correctly.
 ## GeoSearch Widget
 You have to change `YOUR-ACCESS-TOKEN` to your access token in all html file.
 ```
-<script src="https://geosearch.cdg.co.th/g/sdk/1.0.3?key=YOUR-ACCESS-TOKEN"></script>
+<script src="https://geosearch.cdg.co.th/g/sdk/1.0.4?key=YOUR-ACCESS-TOKEN"></script>
 ```  
 
 ## Try GeoSearch Application

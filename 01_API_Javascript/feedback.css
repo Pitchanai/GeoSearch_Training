@@ -6,15 +6,28 @@
   justify-content: space-around;
   align-items: center;
 }
+.get-feedbacktype {
+  padding: 10px;
+  width: 500px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .search-title {
-  width: 125px;
+  width: 200px;
 }
 .search-button {
   width: 130px;
 }
-.search-address-result {
+.feedbacktype-result {
+  width: 500px;
   padding-top: 20px;
   padding-left: 20px;
+}
+.feedback-example {
+  width: 900px;
+  padding: 20px;
 }
 .search-address-language {
   display: flex;
@@ -22,6 +35,9 @@
   justify-content: flex-end;
   padding: 10px;
   width: 800px;
+}
+.hide {
+  display: none !important;
 }
 input {
   width: 500px !important;

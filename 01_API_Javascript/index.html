@@ -6,11 +6,12 @@
     
     <title>GeoSearch Training | REST API - Autocomplete & Location Details</title>
     
-    <script src="../config.js"></script>
+<!--    <script src="../config.js"></script>-->
     <script src="geosearch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../99_Shared/shared.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -32,6 +33,9 @@
             <a class="nav-link" href="batch.html">Batch Search</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="../02_Search_Widget/index.html">Search Widget on Map</a>
           </li>
           <li class="nav-item">
@@ -41,6 +45,7 @@
       </div>
     </nav>
     
+    <div style="height: 20px; width: 100%;"></div>
     <div class="search-address">
       <span class="search-title">Search Address</span>
       <input id="search-address" type="text" class="form-control">
@@ -51,6 +56,14 @@
       <span class="search-title">Location ID</span>
       <input id="locationId" type="text" class="form-control">
       <button onclick="locationDetail()" type="button" class="btn btn-success search-button">Get Details</button>
+    </div>
+      
+    <div class="search-address-language">
+      <span class="search-title">Language</span>
+      <div class="btn-group" role="group" aria-label="language" style="width: 130px; margin-right: 4px;">
+        <button type="button" class="btn btn-info" onclick="locationDetailWithLanguage('th')">Thai</button>
+        <button type="button" class="btn btn-info" onclick="locationDetailWithLanguage('en')">English</button>
+      </div> 
     </div>
     
     <div id="search-address-result" class="search-address-result">

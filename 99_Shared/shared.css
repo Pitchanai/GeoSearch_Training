@@ -1,0 +1,10 @@
+.active {
+    background-color: #7238CE;
+    border-radius: 6px;
+}
+.active .nav-link {
+    color: white !important;
+}
+.navbar-brand {
+    color: #7238CE !important;
+}
